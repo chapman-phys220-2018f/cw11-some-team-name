@@ -13,7 +13,7 @@ This week we will continue the classwork from last week and implement the method
    $$x'(t) = v(t)$$
    $$v'(t) = -x(t)$$
    
-   Show analytically that the solution $x(t) = \cos(t)$ and $v(t) = -\sin(t)$ satisfies these equations. What could $u(t)$ and $v(t)$ model in a physical system? 
+   Show analytically that the solution $x(t) = \cos(t)$ and $v(t) = -\sin(t)$ satisfies these equations. What could $x(t)$ and $v(t)$ model in a physical system? 
    
 1. First, we outline how to think about this problem analytically. Note that you can represent such a coupled system as a _vector_ ODE as follows:
    
