@@ -46,8 +46,6 @@ def heun_method(r0, N):
 
 <<<<<<< HEAD
 def gen_plot(x, y, labels=[""], linestyles=[""], xlabel="", ylabel="", title=""):
-=======
-def gen_plot(x, y, xlabel, ylabel, title):
 >>>>>>> 840a53155e0953c94cfd0ae8888f939590d51c22
     # Plotting
     fig = plt.figure(figsize=(8,6)) # Setting funciton figure size (width, height)
