@@ -53,7 +53,7 @@ def runge_kutta_2ndOrd(r0, N):
         k1 = J@(r[i-1])
         k2 = (r[i-1] + (k1)/2)
         r[i] = r[i-1] + k2
-return r
+    return r
 
 def gen_plot(x, y, labels=[""], linestyles=[""], xlabel="", ylabel="", title=""):
     # Plotting
