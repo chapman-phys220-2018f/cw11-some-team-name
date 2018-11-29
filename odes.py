@@ -31,6 +31,18 @@ def euler_method(r0, N):
         r[i] = r[i-1] + delta_t*(J@(r[i-1])) # euler's method
     return r # r vector
 
+def heun_method(r0, N):
+    delta_t = (2*np.pi)/N # delta t
+    r = np.zeros((5*N, 2)) #creates the 5N by 2 array
+    r[0] = r0
+    J = np.array(([0,1],[-1,0]))
+    for i in range(1, 5*N):
+        slopeL = (J@(r[i-1])) #take the slope at current point
+        r[i] = r[i-1] + delta_t*(J@(r[i-1])) #use Euler's method to approximate next point's location
+        slopeR = (J@(r[i])) #take the slope at next point
+        r[i] = 1/2(slopeL + slopeR)#then take the average to get the true location
+    return r
+
 def gen_plot(x, y, xlabel, ylabel, title):
     # Plotting
     fig = plt.figure(figsize=(8,6)) # Setting funciton figure size (width, height)
