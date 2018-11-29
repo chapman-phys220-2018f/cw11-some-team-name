@@ -44,9 +44,18 @@ def heun_method(r0, N):
         r[i] = 1/2(slopeL + slopeR)#then take the average to get the true location
     return r
 
-<<<<<<< HEAD
+def runge_kutta_2ndOrd(r0, N):
+    delta_t = (2*np.pi)/N #delta t again
+    r = np.zeros((5*N, 2)) #creates the 5N by 2 array
+    r[0] = r0
+    J = np.array(([0,1],[-1,0]))
+    for i in range(1, 5*N):
+        k1 = J@(r[i-1])
+        k2 = (r[i-1] + (k1)/2)
+        r[i] = r[i-1] + k2
+return r
+
 def gen_plot(x, y, labels=[""], linestyles=[""], xlabel="", ylabel="", title=""):
->>>>>>> 840a53155e0953c94cfd0ae8888f939590d51c22
     # Plotting
     fig = plt.figure(figsize=(8,6)) # Setting funciton figure size (width, height)
     axes = plt.axes() # Creating function plot axes
