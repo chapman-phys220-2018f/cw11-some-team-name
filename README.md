@@ -1,6 +1,6 @@
 # PHYS220/MATH220/CPSC220 CW 11
 
-**Author(s):** **CHANGEME**
+**Author(s):** **Jacob Anabi, Gage Kizzar**
 
 ## Specification
 
@@ -41,7 +41,7 @@ This week we will continue the classwork from last week and implement the method
 
 Analyze in this section what you found useful about this assignment in your own words. Include any lingering questions or comments that you may have. You can use the GitHub web interface to edit this file directly for now.
 
-**CHANGEME**
+**Really pushed us to fully understand each method and get comfortable with the manipulation of arrays and matrices.**
 
 ## Honor Pledge
 
@@ -52,4 +52,4 @@ I pledge that all the work in this repository is my own with only the following 
 
 Signed,
 
-**YOURNAMES**
+**Jacob Anabi, Gage Kizzar**
